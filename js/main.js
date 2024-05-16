@@ -21,7 +21,7 @@ function main(currentTime) {
   if (gameOver) {
     if (confirm("You lost. Press ok to restart.")) {
       highScoreCalculate();
-      window.location = "/snakeGame";
+      window.location.reload();
     }
     return;
   }
